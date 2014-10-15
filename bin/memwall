@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+require 'pry'
+
+def wall_filename; '/var/memwall/wall.txt'; end
+
+def username; `whoami`.strip; end
+
+def latest
+lines = `tail -100 #{wall_filename}`
+lines = lines.split("\n")
+lines.reject { |l| l.strip.empty? }
+end
+
+def received_message
+	ARGV.join ' '
+end
+
+def append
+	open(wall_filename, 'a') { |wall|
+	  wall.puts "#{username}\t#{ARGV.join(' ')}"
+	}
+end
+
+append if ARGV.any?
+puts latest.reverse

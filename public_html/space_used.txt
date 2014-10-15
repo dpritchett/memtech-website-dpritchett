@@ -1,0 +1,12 @@
+** Disk usage by user on memtech.website **
+Run date: Wed Oct 15 14:00:01 EDT 2014
+
+222M	/home
+221M	/home/dpritchett
+84K	/home/speakingcode
+60K	/home/orias
+44K	/home/bkmontgomery
+32K	/home/vongrippen
+32K	/home/jscarpace
+32K	/home/dstarnes
+1.1M	/home/unstablereality
