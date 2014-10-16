@@ -19,7 +19,11 @@ def render(usernames)
     <% usernames.each do |u| %>
             <li><a href='/~<%= u %>'><%= u %></a></li>
     <% end %>
-    </ul>"
+    </ul>
+    <% user = usernames.sample %>
+    <h2>check out <a href='/~<%= user %>'><%= user %></a>'s page</h2>
+    <iframe align='bottom' width='100%' height='100%' src='/~<%= user %>'>
+  "
     ERB.new(tpl).result
 end
 

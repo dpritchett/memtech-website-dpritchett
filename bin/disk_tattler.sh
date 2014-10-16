@@ -7,4 +7,4 @@ echo "** Disk usage by user on `hostname` **" > $OUTFILE
 echo "Run date: `date`\n" >> $OUTFILE
 
 # space count
-du -h --max-depth=1 /home | sort -nr >> $OUTFILE
+du --max-depth=1 /home | sort -nr >> $OUTFILE
