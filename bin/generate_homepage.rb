@@ -16,7 +16,7 @@ def render(usernames)
         <h1>Welcome to memtech.website!</h1>
         <pre>Memtech.website is the home of free retro homepages for Memphis area tech enthusiasts.  Ask ~dpritchett about getting your own account today!</pre>
         <ul>
-    <% usernames.each do |u| %>
+    <% usernames.shuffle.each do |u| %>
             <li><a href='/~<%= u %>'><%= u %></a></li>
     <% end %>
     </ul>
