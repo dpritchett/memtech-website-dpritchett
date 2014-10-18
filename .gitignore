@@ -1,0 +1,6 @@
+gopath
+goroot
+.*
+*~
+space_used.txt
+public_html/data

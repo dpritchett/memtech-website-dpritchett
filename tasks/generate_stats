@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+/home/dpritchett/bin/generate_user_stats.rb
+/home/dpritchett/bin/list_sudoers.rb

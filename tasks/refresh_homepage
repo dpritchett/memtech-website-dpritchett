@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+/home/dpritchett/bin/disk_tattler.sh && /home/dpritchett/bin/generate_homepage.rb

@@ -4,6 +4,7 @@
   <pre>$ memwall hi</pre>
 
   <ul>
+    <% binding.pry %>
     <% wall_lines.each do |l| %>
       <% u, *rest = l.split('\t') %>
     <li><a href='/~<%= u %>'><%= u %></a>: <%= rest.join(' ') %></li>
