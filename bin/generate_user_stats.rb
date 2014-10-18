@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
+############################################################
+# Dump some basic user stats into ~/public/html/data
+# as a JSON file for use around the site
+############################################################
+
 require 'pry'
 require 'date'
 require 'json'

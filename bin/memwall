@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 require 'pry'
 
+############################################################
+# This is pointlessly broken
+############################################################
+
 def wall_filename; '/var/memwall/wall.txt'; end
 
 def username; `whoami`.strip; end
