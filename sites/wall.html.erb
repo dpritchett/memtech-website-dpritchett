@@ -1,0 +1,15 @@
+<html>
+<body>
+  <h1>Welcome to the memtech.website MemWall</h1>
+  <pre>$ memwall hi</pre>
+
+  <ul>
+    <% wall_lines.each do |l| %>
+      <% u, *rest = l.split('\t') %>
+    <li><a href='/~<%= u %>'><%= u %></a>: <%= rest.join(' ') %></li>
+  <% end %>
+  </ul>
+
+  <div style=\"align: center; margin-top: 75px\"><%= DateTime.now %></div>
+</body>
+</html>
