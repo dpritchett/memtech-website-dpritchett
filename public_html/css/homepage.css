@@ -1,4 +1,11 @@
-.userlist li {
-  display: inline;
-  margin-left: 5px;
+@media all {
+  .userlist li {
+    display:     inline;
+    margin-left: 5px;
+  }
+
+  .easter-egg a, .easter-egg a:hover {
+    float: right;
+    text-decoration: none !important;
+  }
 }
