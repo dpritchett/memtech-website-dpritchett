@@ -40,4 +40,8 @@ var loadRandomUserPage = function() {
   return displayUserPage(name)
 };
 
+var seizure = function() {
+  setInterval(loadRandomUserPage, 2000);
+}
+
 $(fetchActiveUsers);
