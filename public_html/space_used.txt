@@ -1,14 +1,16 @@
 ** Disk usage by user on memtech.website **
-Run date: Fri Oct 17 16:00:01 EDT 2014
+Run date: Sat Oct 18 10:00:01 EDT 2014
 
-228884	/home
-225960	/home/dpritchett
+8160	/home
+3564	/home/gpspake
 1076	/home/bkmontgomery
 1036	/home/unstablereality
-584	/home/speakingcode
+844	/home/speakingcode
+780	/home/finnious
+616	/home/dpritchett
 60	/home/orias
+48	/home/basedgeek
 36	/home/joshwlewis
 32	/home/vongrippen
 32	/home/jscarpace
 32	/home/dstarnes
-32	/home/basedgeek
