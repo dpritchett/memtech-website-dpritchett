@@ -43,12 +43,17 @@ def seconds_since_last_html_update(user)
   seconds_since_datetime last_update_from(user)
 end
 
+def webring_member?(user)
+  `grep -R --include="*.html" webring_prev /home/#{user}/ | head -1 | wc -l`.strip == '1'
+end
+
 def user_stats(user)
   {
     'active' => user_active?(user),
     'name' => user,
     'timeSinceUpdate' => seconds_since_last_html_update(user),
     'spaceUsed'  => space_used_by(user),
+    'webringMember'  => webring_member?(user),
   }
 end
 

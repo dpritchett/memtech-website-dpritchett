@@ -32,7 +32,7 @@ var displayUserPage = function(user) {
   $(".randomPage a:first").text("~" + name);
 
   $(".randomPage iframe:first").attr('src', link);
-  $(".randomPage").show();
+//  $(".randomPage").show();
 };
 
 var loadRandomUserPage = function() {
@@ -40,9 +40,24 @@ var loadRandomUserPage = function() {
   return displayUserPage(name)
 };
 
+// THANKS STACKOVERFLOW GUYS I LOVE IT /a/8620357
+var dayOfYear = function() {
+  var now    = new Date();
+  var start  = new Date(now.getFullYear(), 0, 0);
+  var diff   = now - start;
+  var oneDay = 1000 * 60 * 60 * 24;
+  return Math.ceil(diff / oneDay);
+};
+
+var userOfDay = function() {
+  index = dayOfYear % window.users.length();
+  window.users[index];
+};
+
 var startSlideshow = function() {
   loadRandomUserPage();
   setInterval(loadRandomUserPage, 4000);
+  $(".randomPage").hide();
 }
 
 $(fetchActiveUsers);

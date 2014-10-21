@@ -5,17 +5,39 @@
 <style>
 .blink {
   animation: blink 1s steps(5, start) infinite;
-  -webkit-animation: blink 1s steps(5, start) infinite;
-}
+  -webkit-animation: blink 1s steps(5, start) infinite; }
 @keyframes blink {
   to { visibility: hidden; }
 }
 @-webkit-keyframes blink {
   to { visibility: hidden; }
+
+}
+
+.webring div {
+  float:  left;
+  margin: 10px;
+}
+
+.webring {
+  padding: 20px 20% 50px 20%;
+  background-color: yellow;
+
+  font-family:  ""Courier New", Courier, monospace";
 }
 </style>
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src='http://memtech.website/~vongrippen/webring.js'></script>
+
 </head>
 <body>
+
+<div class='webring'>
+  <div class='webring_prev'></div>
+  <div>Memtech webring!</div>
+  <div class='webring_next'></div>
+</div>
 
 Hello and welcome to <style="color: green"><font size="200%"><a href="http://memtech.website">memtech.website</a></font></style>'s shared web hosting experience! (<i>lol...as u can see were very random!!!!</i>)
 
