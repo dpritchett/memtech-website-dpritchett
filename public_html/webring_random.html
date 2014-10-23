@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<style>
+</style>
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src='http://memtech.website/~vongrippen/webring.js'></script>
+
+<script>
+var newPage = function() {
+  url = $('.webring_rand a').attr('href');
+  document.location = url;
+};
+
+$( function() { setTimeout(newPage, 1000); });
+</script>
+
+</head>
+<body>
+
+<center><h1>Now loading a random webring page...</h1></center>
+<div class='webring' style="visibility: hidden;">
+  <div class='webring_prev'></div>
+  <div class='webring_rand'></div>
+  <div class='webring_next'></div>
+</div>
